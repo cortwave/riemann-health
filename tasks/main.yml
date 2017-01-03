@@ -1,10 +1,5 @@
 ---
 
-- name: Install Ruby
-  apt:
-    name: ruby
-    state: present
-
 - name: Install riemann-tools
   gem: name=riemann-tools state=latest user_install=no
 
