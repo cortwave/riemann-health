@@ -1,3 +1,5 @@
+![travis ci](https://travis-ci.org/cortwave/riemann-health.svg?branch=master)
+
 Riemann-health ansible role
 =========
 
