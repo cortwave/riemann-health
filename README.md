@@ -10,6 +10,11 @@ Role Variables
 
 `riemann_server_host` address of riemann server host
 
+Dependencies
+----------------
+
+ruby ~>2.0
+
 Example Playbook
 ----------------
 
