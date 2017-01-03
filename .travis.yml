@@ -23,7 +23,7 @@ install:
   - printf '[defaults]\nroles_path=../' >ansible.cfg
   
   # Check ruby version
-  - ruby -v
+  - sudo ruby -v
 
 script:
   # Basic role syntax check
