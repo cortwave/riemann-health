@@ -23,6 +23,7 @@ install:
   - printf '[defaults]\nroles_path=../' >ansible.cfg
 
 script:
+  # println ruby version
   - ruby -v
   # Basic role syntax check
   - ansible-playbook tests/test.yml -i tests/inventory --syntax-check
