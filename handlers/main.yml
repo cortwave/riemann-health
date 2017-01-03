@@ -1,0 +1,7 @@
+---
+
+- name: restart riemann-health
+  service: name=riemann-health state=restarted
+
+- name: reload systemd
+  command: systemctl daemon-reload
