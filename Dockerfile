@@ -14,6 +14,7 @@ RUN pip install ansible-lint
 ADD . ${WORKDIR}
 ADD . /etc/ansible/roles/${ROLE_NAME}
 ADD ./test/inventory /etc/ansible/hosts
+RUN ansible-galaxy install -r $WORKDIR/test/requirements.yml -p $WORKDIR/test/roles/
 
 # Syntax check
 RUN ansible-playbook -i $WORKDIR/test/inventory $WORKDIR/test/test.yml --syntax-check
