@@ -1,20 +1,7 @@
 ---
-- name: Bring up docker containers
-  hosts: localhost
-  gather_facts: false
-  vars:
-    inventory:
-      - name: health_host_1
-        image: "ubuntu:16.04"
-  roles:
-    - role: provision_docker
-      provision_docker_inventory: "{{ inventory }}"
 
-- name: Run riemann-health Tests
-  hosts: docker_containers
+- hosts: localhost
+  remote_user: root
   roles:
     - role: riemann-health
       riemann-server-host: "127.0.0.1"
-  tasks:
-    - name: Test
-      command: 'echo "hello world"'
