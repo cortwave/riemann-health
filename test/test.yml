@@ -9,4 +9,4 @@
   remote_user: root
   roles:
     - role: riemann-health
-      riemann-server-host: "127.0.0.1"
+      riemann_server_host: "127.0.0.1"
