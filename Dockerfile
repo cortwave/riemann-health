@@ -10,6 +10,7 @@ RUN apt-get update -qq \
     && apt-get purge -y \
     && apt-get autoremove -y \
     && apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
+    && apt-get install ruby
 RUN pip install ansible-lint
 ADD . ${WORKDIR}
 ADD . /etc/ansible/roles/${ROLE_NAME}
