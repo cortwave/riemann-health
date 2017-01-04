@@ -1,4 +1,4 @@
-![travis ci](https://travis-ci.org/cortwave/riemann-health.svg?branch=master)
+[![Build Status](https://travis-ci.org/cortwave/riemann-health.svg?branch=master)](https://travis-ci.org/cortwave/riemann-health)
 
 Riemann-health ansible role
 =========
@@ -9,6 +9,11 @@ Role Variables
 --------------
 
 `riemann_server_host` address of riemann server host
+
+Dependencies
+----------------
+
+ruby ~>2.0
 
 Example Playbook
 ----------------

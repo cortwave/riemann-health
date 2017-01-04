@@ -12,7 +12,6 @@
 
 - name: Run riemann-health Tests
   hosts: docker_containers
-  vars:
   roles:
     - role: riemann-health
       riemann-server-host: "127.0.0.1"
