@@ -3,7 +3,7 @@
 - hosts: localhost
   roles:
     - role: ruby
-      ruby_version: 2.2.1 
+      ruby_version: 2.2.1
 
 - hosts: localhost
   remote_user: root
