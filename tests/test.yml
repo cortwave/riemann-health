@@ -10,4 +10,5 @@
   roles:
     - { role: ruby,
         ruby_version: 2.2.1 }
-    - role_under_test
+    - { role: role_under_test,
+        riemann_server_host: "127.0.0.1" }
