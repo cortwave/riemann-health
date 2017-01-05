@@ -1,12 +1,11 @@
 ---
+- hosts: all
 
-- hosts: localhost
-  roles:
-    - role: ruby
-      ruby_version: 2.2.1
+  pre_tasks:
+    - name: Update apt cache.
+      apt: update_cache=yes cache_valid_time=600
+      when: ansible_os_family == 'Debian'
+      changed_when: false
 
-- hosts: localhost
-  remote_user: root
   roles:
-    - role: riemann-health
-      riemann_server_host: "127.0.0.1"
+    - role_under_test
