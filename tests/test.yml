@@ -8,6 +8,6 @@
       changed_when: false
 
   roles:
-    - { role: geerlingguy.ruby,
+    - { role: ruby,
         ruby_version: 2.2.1 }
     - role_under_test
