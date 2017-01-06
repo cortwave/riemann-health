@@ -1,7 +1,6 @@
-[![Build Status](https://travis-ci.org/cortwave/riemann-health.svg?branch=master)](https://travis-ci.org/cortwave/riemann-health)
+#Riemann-health ansible role
 
-Riemann-health ansible role
-=========
+[![Build Status](https://travis-ci.org/cortwave/riemann-health.svg?branch=master)](https://travis-ci.org/cortwave/riemann-health)
 
 [Riemann](http://riemann.io) utility for node cpu/memory monitoring
 
