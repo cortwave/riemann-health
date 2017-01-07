@@ -4,6 +4,13 @@
 
 [Riemann](http://riemann.io) utility for node cpu/memory monitoring
 
+Tested OS
+--------------
+
+- Debian 8
+- Ubuntu 16.04
+- Centos 7
+
 Role Variables
 --------------
 
