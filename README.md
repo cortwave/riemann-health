@@ -6,6 +6,7 @@
 
 Tested OS
 --------------
+Role works only on modern dystros with `systemd` support
 
 - Debian 8
 - Ubuntu 16.04
